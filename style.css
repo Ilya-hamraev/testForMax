@@ -165,6 +165,10 @@ table {
   border-radius: 5px;
   box-sizing: border-box;
   border: 1px solid #a0a0a0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .form-line-field select {
@@ -174,6 +178,10 @@ table {
   box-sizing: border-box;
   border: 1px solid #a0a0a0;
   background: #fff;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
 }
 
 .form-line-field input:focus,
@@ -204,6 +212,10 @@ table {
 .table {
   border: 1px solid #000;
   border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
 }
 
 .table-row {
@@ -239,6 +251,14 @@ table {
   transition: 0.4s;
   cursor: pointer;
   border: 1px solid #a0a0a0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
 }
 
 .btn-submit:hover {
@@ -264,12 +284,24 @@ table {
   position: relative;
   cursor: pointer;
   transition: 0.4s;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
 }
 
 .custom_btn p {
   color: #000;
   position: relative;
   transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
 }
 
 .custom_btn span {
@@ -282,6 +314,14 @@ table {
   background: #000;
   transition: 0.4s;
   border-radius: 20px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 .custom_btn:hover p {
   color: #fff;
@@ -291,6 +331,10 @@ table {
   right: 0;
   width: 100%;
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .custom_btn span:after {
@@ -303,6 +347,10 @@ table {
   width: 10px;
   height: 2px;
   background: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
 }
 
 .custom_btn span:before {
@@ -311,8 +359,12 @@ table {
   position: absolute;
   left: 11px;
   top: 15px;
-  transform: rotate(135deg);
   width: 10px;
   height: 2px;
   background: #fff;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
 }
