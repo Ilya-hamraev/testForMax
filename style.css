@@ -1,0 +1,318 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* styles */
+
+.body {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 10px;
+}
+
+.form {
+  margin-bottom: 30px;
+}
+
+.form-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.table-block-title {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.form-line-field {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.form-line-field input,
+.form-line-field textarea {
+  padding: 7px 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid #a0a0a0;
+}
+
+.form-line-field select {
+  border-radius: 0px;
+  width: 120px;
+  height: 29px;
+  box-sizing: border-box;
+  border: 1px solid #a0a0a0;
+  background: #fff;
+}
+
+.form-line-field input:focus,
+.form-line-field textarea:focus,
+.form-line-field select:focus {
+  outline: none;
+  border-color: #339edc;
+}
+
+.form-line-field.form-line-field_full-width {
+  width: 100%;
+  margin-right: 0px;
+}
+
+.form-line-field-label {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+.form-line-field-comment {
+  width: 100%;
+  height: 80px;
+  resize: none;
+}
+
+.table {
+  border: 1px solid #000;
+  border-radius: 2px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(80px, 150px)) minmax(100px, 1fr) 100px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  border-bottom: 1px solid #000;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-row-column {
+  padding: 5px 10px;
+  border-right: 1px solid #000;
+}
+
+.table-row-column:last-child {
+  border-right: none;
+}
+
+.table-row-column__bold {
+  font-weight: 600;
+}
+
+.btn {
+  padding: 7px 15px;
+  border-radius: 2px;
+  font-size: 0.7em;
+  transition: 0.4s;
+  cursor: pointer;
+  border: 1px solid #a0a0a0;
+}
+
+.btn-submit:hover {
+  border-color: #339edc;
+  background: #96cdffa6;
+}
+
+.btn-remove:hover {
+  border-color: #f44336;
+  background: #ffd3d3a1;
+}
+
+.btn-submit:focus {
+  outline: none;
+  border-color: #339edc;
+}
+
+.custom_btn {
+  height: 29px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 0 10px 0 36px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.custom_btn p {
+  color: #000;
+  position: relative;
+  transition: 0.4s;
+}
+
+.custom_btn span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 27px;
+  height: 27px;
+  background: #000;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+.custom_btn:hover p {
+  color: #fff;
+}
+
+.custom_btn:hover span {
+  right: 0;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.custom_btn span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 11px;
+  top: 9px;
+  transform: rotate(45deg);
+  width: 10px;
+  height: 2px;
+  background: #fff;
+}
+
+.custom_btn span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 11px;
+  top: 15px;
+  transform: rotate(135deg);
+  width: 10px;
+  height: 2px;
+  background: #fff;
+}

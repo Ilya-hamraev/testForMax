@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Test</title>
+  </head>
+
+  <body class="body">
+    <main class="content">
+      <form class="form">
+        <div class="form-line">
+          <label class="form-line-field">
+            <p class="form-line-field-label">Date</p>
+            <input required type="text" name="" id="" />
+          </label>
+          <label class="form-line-field">
+            <p class="form-line-field-label">Amount</p>
+            <input required type="number" name="" id="" />
+          </label>
+          <label class="form-line-field">
+            <p class="form-line-field-label">Type</p>
+            <select required>
+              <option>Car</option>
+              <option>Home</option>
+              <option>Products</option>
+              <option>Study</option>
+              <option>Leisure </option>
+            </select>
+          </label>
+          <button class="custom_btn">
+            <span></span>
+            <p>Submit form</p>
+          </button>
+        </div>
+        <div class="form-line">
+          <label class="form-line-field form-line-field_full-width">
+            <p class="form-line-field-label">Comment</p>
+            <textarea class="form-line-field-comment"></textarea>
+          </label>
+        </div>
+      </form>
+      <div class="table-block">
+        <h1 class="table-block-title">Сosting table</h1>
+
+        <div class="table">
+          <div class="table-row">
+            <div class="table-row-column table-row-column__bold">Date</div>
+            <div class="table-row-column table-row-column__bold">Amount</div>
+            <div class="table-row-column table-row-column__bold">Type</div>
+            <div class="table-row-column table-row-column__bold">Comment</div>
+            <div class="table-row-column table-row-column__bold">X</div>
+          </div>
+
+          <div class="table-row">
+            <div class="table-row-column">21.04.2012</div>
+            <div class="table-row-column">14484</div>
+            <div class="table-row-column">Car</div>
+            <div class="table-row-column"></div>
+            <div class="table-row-column">
+              <button class="btn btn-remove" type="button">Remove</button>
+            </div>
+          </div>
+          <div class="table-row">
+            <div class="table-row-column">16.07.2014</div>
+            <div class="table-row-column">19534</div>
+            <div class="table-row-column">Home</div>
+            <div class="table-row-column">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta,
+              aliquid?
+            </div>
+            <div class="table-row-column">
+              <button class="btn btn-remove" type="button">Remove</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
